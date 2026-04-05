@@ -1,0 +1,523 @@
+*{
+    padding: 00 ;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(228, 229, 230);
+}
+.navbar{
+    background-color: transparent !important;
+    padding-top: 20px;
+}
+.nav-item{
+    padding: 5px 10px;
+    align-items: center;
+    display: flex;
+}
+.navbar-brand{
+    color: aliceblue !important;
+    font-size: 28px;
+    font-weight: 500;
+}
+.nav-link{
+    position: relative;
+    overflow: hidden;
+    color: aliceblue !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #f1c70b !important;
+}
+
+.signup-btn{
+    border-radius: 20px;
+    padding: 8px 35px;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: 0.6s;
+}
+.nav-link:hover::after{
+    transform: scalex(0.9);
+}
+
+.dropdown-menu{
+    background-color: transparent;    
+
+
+}
+.dropdown-item{
+    color: aliceblue ;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.dropdown-item:hover{
+    background-color: transparent;
+    color: #f1c70b;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    color: aliceblue;
+}
+.home h1{
+    font-size:65px;
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    
+    
+}
+.home p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.home-img{
+    background-image: url("../img/home-image.jpg");
+    height:800px;
+    background-position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Our-impact{
+    padding: 50px 20px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    z-index: 99 !important;
+    position: absolute;
+    top: 640px;
+    width: 80%;
+    padding-left: 220px;
+}
+
+
+.impact-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.impact-box:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.impact-text {
+    font-size: 16px;
+}
+
+
+.news{
+    padding: 200px 10% 80px;
+    align-items: center;
+}
+
+.news-text{
+    text-align: center;
+}
+.news h1{
+    font-size: 60px;
+}
+
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card Styling */
+.card {
+    width: 400px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image Styling */
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+/* Card Content */
+.card-content {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+}
+
+
+/* Headings */
+.card h2 {
+    font-size: 30px;
+    margin-bottom: 70%;
+}
+
+/* Text */
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Read More Button */
+.read-more {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+.conatiner-service{
+    background-color: white;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+    gap: 20px;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.subheading {
+    color: #f5a623;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.left-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.left-section p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.left-section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Right Section */
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-section img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Experience Block */
+.experience-block {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.experience-block h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.experience-block span {
+    color: #f5a623;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.experience-block p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-section, .right-section {
+        width: 100%;
+    }
+}
+
+
+.partners-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.partners-content {
+    width: 50%;
+}
+
+.subheading {
+    color: #f5a623;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.partners-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.partners-description {
+    width: 40%;
+    font-size: 16px;
+    color: #555;
+}
+ 
+.slide img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 60s linear infinite;
+  }
+  
+  .slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+  }
+  
+  .slider {
+    margin-top: 70px;
+    background-color: whitesmoke;
+    padding: 4em 2em;
+  }
+  
+  @keyframes scroll {
+    0% {transform: translateX(0);}
+    100% {transform: translatex(-1000%)}
+  }
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .partners-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .partners-content, .partners-description {
+        width: 100%;
+    }
+}
+
+
+
+
+/* back to top  button  */
+
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom: 28px;
+    right: 40px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(231, 189, 0);
+    color: white;
+    cursor: pointer;
+    padding: 0px 8px;
+}
+
+#mybtn:hover{
+    background-color: #bb9900;
+}
+
+.quality {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.quality img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    max-width: 600px;
+}
+.content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.quality-btn{
+    border-radius: 20px;
+    padding: 8px 35px;
+}
+
+.review{
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 100px 0px !important;
+}
+
+.review-text p{
+    font-size: 16px;
+}
+
+
+.footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    align-items: center;
+}
+.footer nav {
+    margin-bottom: 10px;
+}
+.footer nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 14px;
+}
+.footer nav a:hover {
+    color: #000;
+}
+.footer p {
+    color: #6c757d;
+    font-size: 14px;
+}
+.footer-brand{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer-link{
+    font-size: 18px !important;
+    color: #000 !important;
+    font-weight: 500;
+}
+
+.social{
+    font-size: 29px !important;
+}
+
+.copy-write{
+    justify-content: space-between;
+    display: flex;
+    padding: 20px 100px;
+}
+
+.logo-youtube:hover{
+    color: red !important;
+    cursor: pointer;
+}
+
+.logo-linkedin:hover{
+    color: rgb(34, 34, 255);
+    cursor: pointer;
+}
+
+.logo-facebook:hover{
+    color: blue;
+    cursor: pointer;
+
+}
+
+.logo-instagram:hover{
+    color: purple;
+    cursor: pointer;
+
+}
+
+
+a.username{
+    text-decoration: none;
+    color: #bb9900 !important;
+    font-size: 18px;
+}

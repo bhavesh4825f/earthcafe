@@ -1,0 +1,346 @@
+*{
+    padding: 00 ;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navbar */
+
+.navbar{
+    background-color: transparent !important;
+    padding-top: 20px;
+}
+.nav-item{
+    padding: 5px 10px;
+}
+.navbar-brand{
+    color: aliceblue !important;
+    font-size: 28px;
+    font-weight: 500;
+}
+.nav-link{
+    position: relative;
+    overflow: hidden;
+    color: aliceblue !important;
+    font-size: 16px;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #f1c70b !important;
+}
+
+.signup-btn{
+    border-radius: 20px;
+    padding: 8px 35px;
+}
+.nav-link::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: 0.6s;
+}
+.nav-link:hover::after{
+    transform: scalex(0.9);
+}
+
+.dropdown-menu{
+    background-color: transparent;    
+
+
+}
+.dropdown-item{
+    color: aliceblue ;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 10px;
+}
+
+.dropdown-item:hover{
+    background-color: transparent;
+    color: #f1c70b;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    color: rgb(255, 255, 255);
+}
+.about-text h1{
+    font-size:70px;
+    font-weight: 550;
+    font-family: "Merriweather", serif;
+    
+    
+}
+.about-text p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-img{
+    background-image: url("../img/about-home-image.jpg");
+    height:500px;
+    background-position: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /* cards  */
+ 
+.news{
+    padding: 60px 10% 80px;
+    align-items: center;
+}
+
+.news-text{
+    text-align: center;
+}
+.news h1{
+    font-size: 40px;
+}
+
+.news p{
+    font-size: 16px;
+}
+.news-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.news-container3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    max-width: 12000px;
+    margin: auto;
+}
+
+/* Card Styling */
+.card {
+    width: 350px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Image Styling */
+.card img {
+    position: relative;
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+/* Card Content */
+.card-content {
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+
+/* Headings */
+.card h2 {
+    font-size: 30px;
+}
+
+/* Read More Button */
+
+.apply{
+    position: absolute;
+    margin-left: 35px;
+    margin-top: 420px;
+}
+.read-more {
+    color: orange;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+.form-control{
+    font-size: 24px !important;
+    
+}
+
+
+/* Container4  */
+
+.container4 {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../img/footer-bg.jpg');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.container-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container-content {
+    position: relative;
+    max-width: 900px;
+    z-index: 1;
+}
+
+.container-content h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.container-content p {
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+.container-btn{
+    border-radius: 20px;
+    padding: 8px 35px;
+    margin-top: 20px;;
+}
+
+/* back to top  button  */
+
+#mybtn{
+    display: none;
+    position: fixed;
+    bottom: 28px;
+    right: 40px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(231, 189, 0);
+    color: white;
+    cursor: pointer;
+    padding: 0px 8px;
+}
+
+#mybtn:hover{
+    background-color: #bb9900;
+}
+
+/* Footer */
+.footer {
+    background: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    align-items: center;
+}
+.footer nav {
+    margin-bottom: 10px;
+}
+.footer nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #6c757d;
+    font-size: 14px;
+}
+.footer nav a:hover {
+    color: #000;
+}
+.footer p {
+    color: #6c757d;
+    font-size: 14px;
+}
+.footer-brand{
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.footer-link{
+    font-size: 18px !important;
+    color: #000 !important;
+    font-weight: 500;
+}
+
+.social{
+    font-size: 29px !important;
+}
+
+hr{
+    padding: 00 ;
+    margin: 0; 
+}
+.copy-write{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 20px 100px;
+}
+
+.logo-youtube:hover{
+    color: red !important;
+    cursor: pointer;
+}
+
+.logo-linkedin:hover{
+    color: rgb(34, 34, 255);
+    cursor: pointer;
+}
+
+.logo-facebook:hover{
+    color: blue;
+    cursor: pointer;
+
+}
+
+.logo-instagram:hover{
+    color: purple;
+    cursor: pointer;
+
+}
+
+.username{
+    text-decoration: none;
+    color: #bb9900 !important;
+    font-size: 18px;
+}

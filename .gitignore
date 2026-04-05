@@ -1,0 +1,19 @@
+# Environment and secrets
+.env
+
+# Runtime / logs
+*.log
+logs/
+
+# Dependencies
+vendor/
+node_modules/
+
+# Uploaded user files
+uploads/*
+!uploads/.gitkeep
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+.vscode/

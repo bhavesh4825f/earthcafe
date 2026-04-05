@@ -1,0 +1,8 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^favicon\.ico$ img/ashok-stambh.jpg [L]
+</IfModule>
+
+<IfModule mod_headers.c>
+    Header set Link "</Earthcafe/img/ashok-stambh.jpg>; rel=\"icon\"; type=\"image/jpeg\""
+</IfModule>
